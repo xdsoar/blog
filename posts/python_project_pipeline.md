@@ -3,7 +3,7 @@ title: python项目流水线
 date: 2019-12-31 08:04:37
 ---
 
-依旧是上次的[python 项目](/python_projcet), 周末抽时间把流水线建了, 顺便加了一个badge. python项目的流水线相对简单, 对于编译流水线来说, 其实只要跑一下测试就好了. 
+依旧是上次的[python 项目](/python_project), 周末抽时间把流水线建了, 顺便加了一个badge. python项目的流水线相对简单, 对于编译流水线来说, 其实只要跑一下测试就好了. 
 
 这里我用的测试框架是pytest, 以azure流水线为例, yaml内容如下
 
