@@ -1,6 +1,7 @@
 ---
 title: 2019年我是如何写博客的
 date: 2019-08-23 10:40:09
+permalink: how_I_write_blog_in_2019
 tags:
 - setup
 - blog

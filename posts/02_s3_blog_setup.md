@@ -1,6 +1,7 @@
 ---
 title: aws s3部署hexo博客
 date: 2019-06-07 12:14:51
+permalink: s3_blog_setup
 tags: 
 - setup
 - blog
