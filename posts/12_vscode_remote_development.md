@@ -1,7 +1,7 @@
 ---
 title: vscode远程开发
 date: 2021-04-21 05:30:43
-Permalink: vscode_remote_development
+permalink: vscode_remote_development/
 ---
 
 大概两年前，`vscode`推出了以SSH为基础的远程开发插件，当时还只是略作了解，然后拿来作为远程文本编辑的一个备选项。相当于是ssh环境下`vim`和`emcas`的一个替代品。作为GUI基础的文本编辑器，在访问未经配置远程环境下，相比使用全默认配置的`vim`还是要更好用一点，不过也就仅限于此了。

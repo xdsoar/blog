@@ -1,7 +1,7 @@
 ---
 title: hexo页面性能优化
 date: 2019-06-16 08:00:00
-permalink: blog_performance_tuning
+permalink: blog_performance_tuning/
 ---
 
 继上篇最后给s3增加了cdn之后, 访问性能其实还算堪堪够用, 剩下倒是些细枝末节的优化. 虽然俗话说过早的优化是万恶之源. 不过身为程序员的代码洁癖还是让我忍不住把这些问题处理掉.
@@ -10,7 +10,7 @@ permalink: blog_performance_tuning
 
 如何发现性能问题是第一步. 对于网页访问的响应速度分析, 最简单的粗暴的做法是通过浏览器控制台自带的响应时间捕捉数据. 以chrome开发工具为例
 
-![屏幕快照 2019-06-14 上午11.34.40](blog_performance_tuning/controlpanel.png)
+![屏幕快照 2019-06-14 上午11.34.40](03_blog_performance_tuning/controlpanel.png)
 
 这里我测试的是加载部署在aws ec2上的hexo博客的情况, 并且使用的是手机4g作为热点. 可以看到加载时间长达27秒. 其中dom文档下载花费了15秒, 而所有资源(主要是图片)则是耗时长达27秒.
 
@@ -18,7 +18,7 @@ permalink: blog_performance_tuning
 
 下图是本博客在优化前的评分情况.
 
-![pagespeed](blog_performance_tuning/pagespeed.png)
+![pagespeed](03_blog_performance_tuning/pagespeed.png)
 
 除了提供评分以后, pagespeed insights还提供了很多优化建议. 比如延迟加载屏幕外图片, 在header中增加cache时间, 使用gzip做文本压缩等.
 
@@ -50,7 +50,7 @@ cf的变更需要一定时间生效. 稍后通过浏览器查看, 同样可以�
 
 pagespeed insights的评分有一定滞后性, 可能是google会对网页做缓存的缘故. 下图是上述优化都生效以后的评分情况.
 
-![屏幕快照 2019-06-14 上午11.15.11](blog_performance_tuning/rankafter.png)
+![屏幕快照 2019-06-14 上午11.15.11](03_blog_performance_tuning/rankafter.png)
 
 这时候的评分就理想多了. 虽然还存在一个首次有效绘制时间过晚的问题. 猜测是next这个主题引起的, 要等到页面相关的资源(html、css、js等)全部就位以后才会绘制页面.
 

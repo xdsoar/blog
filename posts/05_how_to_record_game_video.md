@@ -1,7 +1,7 @@
 ---
 title: 游戏视频录制指引
 date: 2019-08-29 14:52:05
-permalink: how_to_record_game_video
+permalink: how_to_record_game_video/
 tags:
 - game
 - setup

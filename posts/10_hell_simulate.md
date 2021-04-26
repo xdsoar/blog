@@ -1,7 +1,7 @@
 ---
 title: 深渊模拟器
 date: 2020-04-23 08:42:37
-permalink: hell_simulate
+permalink: hell_simulate/
 ---
 
 [发布地址](http://lab.goatman.me/hell-simulate/), 以及github的[链接](https://github.com/xdsoar/hell-simulate).

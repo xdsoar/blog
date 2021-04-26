@@ -1,7 +1,7 @@
 ---
 title: SSIM算法图像去重
 date: 2020-07-19 04:55:21
-permalink: image_dedup_use_ssim
+permalink: image_dedup_use_ssim/
 ---
 
 最近碰到一个蛮有意思的问题. 我原来在windows平台下有使用一款叫`timesnapper`的软件. 这个软件的作用是可以在间隔一段固定的时间后做一次屏幕截图, 将图片保存下来. 我用这个功能主要是用来做时间开销的记录. 此外, 之前在hackernews上看到过一个有意思的帖子是对比20年来的桌面的变化. 所以我觉得定期记录一下自己的电脑也算是蛮有意思的一件事情.

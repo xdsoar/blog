@@ -1,7 +1,7 @@
 ---
 title: waifu2x视频渲染
 date: 2020-03-02 10:37:30
-permalink: waifu2x_video_render
+permalink: waifu2x_video_render/
 ---
 
 前阵子游戏上录了几个视频, 传到b站, 顺便学了点视频编辑和压制的知识. 主要是`x264`和`ffmpeg`相关的. 不过浅尝辄止, 这部分就先不展开说了.

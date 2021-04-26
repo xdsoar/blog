@@ -1,7 +1,7 @@
 ---
 title: python项目
 date: 2019-12-17 08:21:00
-permalink: python_project
+permalink: python_project/
 ---
 
 GTD, 或者说todo类的产品, 是我一直有频繁使用的一类应用. 不管是哪个平台, 从桌面系统windows\mac到移动端ios\android, 我都有不少尝试. 其中不乏佼佼者, 遗憾的是总是因为跨平台的一些原因, 在这个平台上好用的应用, 换了平台要么不好用了要么就是根本没有.(比如仅限mac系统的omnifocus, 仅限windows系统的mlo).
