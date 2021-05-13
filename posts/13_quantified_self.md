@@ -1,5 +1,5 @@
 ---
-title: 量化自我，我的做法
+title: 量化自我之路
 date: 2021-04-29 07:07:06
 permlink: quantified_self_in_my_way/
 ---
@@ -32,11 +32,11 @@ permlink: quantified_self_in_my_way/
 
 另外如果使用的是纯粹的苹果生态圈，也可以考虑系统自带屏幕时间（ScreenTime）。缺点是对于第三方浏览器（chrome、edge、firefox），无法统计到具体网站，只有自带的safari是会将花费在浏览器上的时间，穿透到具体站点上。这一点对于通常使用定制app的移动端无所谓，但是对于浏览器使用较为频繁的桌面端还是有些影响。假以时日各大浏览器若是都能支持屏幕时间的话，倒是一个不错的方案。
 
-另外，使用系统自带的屏幕时间，想要获取原始的数据，也是需要费一些手段的。[这个项目]([mac4n6/APOLLO: Apple Pattern of Life Lazy Output'er (github.com)](https://github.com/mac4n6/APOLLO))似乎可以做到这一点，不过根据sof上的[这个帖子](https://stackoverflow.com/questions/66935741/how-to-get-screen-time-data-on-macos)的说法，可能还需要关闭SIP才行。一个更合乎常理的途径是通过[这个地址](https://stackoverflow.com/questions/66935741/how-to-get-screen-time-data-on-macos)直接向苹果索要数据，不过我尝试了两回获取除了**iCloud邮件、照片、文档**以外的全部其他数据，其中并不包含屏幕时间的数据。
+另外，使用系统自带的屏幕时间，想要获取原始的数据，也是需要费一些手段的。[这个项目]([mac4n6/APOLLO: Apple Pattern of Life Lazy Output'er (github.com)](https://github.com/mac4n6/APOLLO))似乎可以做到这一点，不过根据sof上的[这个帖子](https://stackoverflow.com/questions/66935741/how-to-get-screen-time-data-on-macos)的说法，可能还需要关闭SIP才行。一个更合乎常理的途径是通过[这个地址](https://stackoverflow.com/questions/66935741/how-to-get-screen-time-data-on-macos)直接向苹果索要数据，不过我尝试了两回向苹果索要数据，其中并不包含屏幕时间的数据。
 
 对于移动端，在android上我也使用的是`RescueTime`。不过即使有精神洁癖不想用，问题也不大，android系统本身也会记录应用的使用时间，想必找个法子记录在本地或者是导出都是比较简单的。
 
-至于iOS系统，和上面提到的mac一样，虽然有现成的系统功能会记录这些数据，但是却无法便利的拿到。因为我目前iOS设备使用并不多，所以在这件事情上并不是太关注。如果一定要的话，我打算的做法是用一台旧iOS设备越狱以后，通过iCloud同步主设备的数据，然后从文件系统中拿到相关数据，以此来尽量避免对日常使用的影响。不过即使如此，通过iCloud同步的数据依旧存在因越狱引起泄露的风险。最好还是由苹果提供这些数据，毕竟这下数据本来就属于用户，希望以后苹果能完善这块数据的供给吧。
+至于iOS系统，和上面提到的mac一样，虽然有现成的系统功能会记录这些数据，但是却无法便利的拿到。因为我目前iOS设备使用并不多，所以在这件事情上并不是太关注。后续如果需要的话，我打算的做法是用一台旧iOS设备越狱，通过iCloud同步主设备的数据，然后从文件系统中拿到相关数据，以此来尽量避免对日常使用的影响。不过即使如此，通过iCloud同步的数据依旧存在因越狱引起泄露的风险。最好还是由苹果提供这些数据，毕竟这下数据本来就属于用户，希望以后苹果能完善这块数据的供给吧。
 
 ### 线上其他数据
 
