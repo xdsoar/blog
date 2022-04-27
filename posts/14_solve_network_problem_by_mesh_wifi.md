@@ -1,7 +1,7 @@
 ---
 title: mesh wifi解决网络布线问题
 date: 2021-08-16 15:12:58
-permalink: solve_network_problem_by_mesh_wifi
+permalink: solve_network_problem_by_mesh_wifi/
 ---
 
 从去年搬家以来，我就保持着极简的局域网环境。光纤入户后，用客厅里的路由器拨号上网，除了和路由器放在一块的nas以外，其他所有设备，包括电视、电脑以及其他智能设备，都是通过wifi接入，结构上非常扁平，简单。而且过去的这一年多时间里也很少遇到实际问题，就一直这么用着。
