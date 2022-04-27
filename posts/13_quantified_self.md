@@ -1,7 +1,7 @@
 ---
 title: 量化自我之路
 date: 2021-04-29 07:07:06
-permlink: quantified_self_in_my_way/
+permalink: quantified_self_in_my_way/
 ---
 
 ## 起因 

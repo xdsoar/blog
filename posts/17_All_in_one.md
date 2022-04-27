@@ -1,7 +1,7 @@
 ---
 title: All in one
 date: 2022-04-26 12:23:17
-permalink: AIO
+permalink: all_in_one/
 ---
 
 ## 前言

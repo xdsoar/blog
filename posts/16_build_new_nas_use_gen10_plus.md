@@ -1,7 +1,7 @@
 ---
 title: 新nas
 date: 2022-02-17 03:56:30
-Permalink: build_new_nas_use_gen10_plus/
+permalink: build_new_nas_use_gen10_plus/
 ---
 
 ## 起因
