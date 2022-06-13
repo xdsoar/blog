@@ -1,5 +1,5 @@
 ---
-title: All in one 系统建设
+title: homelab系列-系统搭建
 date: 2022-04-26 12:23:17
 updated: 2022-6-6 09:37:53
 permalink: all_in_one/
