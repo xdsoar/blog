@@ -129,7 +129,6 @@ http {
     # for more information.
     include /etc/nginx/conf.d/*.conf;
 }
-~                            
 ```
 
 每个服务的反向代理配置分拆为单独的配置文件，内容也很简单，以qbittorrent为例
