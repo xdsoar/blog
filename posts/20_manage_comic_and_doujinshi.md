@@ -25,7 +25,9 @@ tags:
 
 ehentai原站提供的RSS功能比较单一，无法满足个性化订阅的需要，不过有了RSSHub就比较方便了，这里主要用到的是RSSHub中ehentai的搜索路由。路由参考RSSHub官网的说明，格式为 `/ehentai/search/:params?/:page?/:routeParams?`。可以先在ehentai网站上搜索一次，复制网址后面的搜索参数。这里额外补充一点，其中页码参数`page`是从0开始而非1。以及因为要用于后续下载使用，所以还需要把获取种子地址参数打开。
 
-例如我会订阅所有评分为5分的汉化漫画和同人志，最后的路由为：`/ehentai/search/f_cats=1017&f_search=language%3AChinese&advsearch=1&f_sname=on&f_stags=on&f_sr=on&f_srdd=5/0/bittorrent=1`。
+例如我会订阅所有评分为5分的汉化漫画和同人志，最后的路由为：
+
+`/ehentai/search/f_cats=1017&f_search=language%3AChinese&advsearch=1&f_sname=on&f_stags=on&f_sr=on&f_srdd=5/0/bittorrent=1`。
 
 qBittorrent在server端需要额外安装qBittorrent-nox来提供web管理功能，稍微需要注意，qBittorrent-nox的版本不能太低，否则是没有rss订阅功能的。把订阅地址扔到qBittorrent的RSS订阅里，配置好自动下载，整个流程就算完成了。本来还想着对于没有提供种子的漫画需要额外处理一下走http下载，搜了一下近半年的汉化漫画都提供种子文件，决定暂时先不折腾这块了。
 
