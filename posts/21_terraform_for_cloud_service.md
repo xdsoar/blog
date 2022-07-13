@@ -33,7 +33,7 @@ Terraform是HashiCorp创建的IaC工具，在IaC领域目前姑且算是较为�
 
 那么IaC的作用是什么呢？我个人认为是为基础设施提供更好的运维方式。特别是采用声明式的管理方式，可以确保基础设施的状态是受控的，可感知的。当然前提是能够完全通过IaC工具进行基础设施管理，使它成为单一事实来源。
 
-Terraform的官方文档比较冗长，为了快速上手，我参考的是[阿里云的文档]([通过Terraform管理Bucket (aliyun.com)](https://help.aliyun.com/document_detail/111911.html))。下面我以本次博客部署为例，讲述使用Terraform管理基础设施的全过程。
+Terraform的官方文档比较冗长，为了快速上手，我参考的是[阿里云的文档](https://help.aliyun.com/document_detail/111911.html))。下面我以本次博客部署为例，讲述使用Terraform管理基础设施的全过程。
 
 ## 开始之前
 
@@ -54,7 +54,7 @@ Terraform的官方文档比较冗长，为了快速上手，我参考的是[阿�
 首先厘清一个静态博客站点需要用到哪些云服务
 
 * 一个oss bucket用于存储静态站点的文件
-* 一个dns记录，作为博客
+* 一个dns记录，作为博客域名
 * 一个用户，以及对应的RAM，用于CI部署制品到OSS
 * （可选）一个用于加速访问的CDN
 * （可选）一个SSL证书，支持https访问
@@ -191,7 +191,7 @@ resource "alicloud_ram_user" "ssl_user" {
 
 resource "alicloud_ram_access_key" "ak" {
   user_name   = alicloud_ram_user.ssl_user.name
-  secret_file = "<storage_path>/accesskey.txt" # 保存AccessKey的文件名
+  secret_file = "accesskey.txt" # 保存AccessKey的文件名
 }
 
 resource "alicloud_ram_policy" "ssl_policy" {
@@ -219,9 +219,9 @@ resource "alicloud_ram_user_policy_attachment" "ssl_attach" {
 }
 ```
 
-上面的配置里没有一个变量，属于拿来即用的简单配置。不过这里我分配的权限偏大了一点，给予了整个阿里云解析的权限，追求权限分配最小化的话可以更细化一点。
+上面的配置里没有一个变量，属于拿来即用的简单配置。不过这里我分配的权限偏大了一点，给予了账户下DNS解析服务的所有权限，追求权限分配最小化的话可以更细化一点。
 
-关于`acme.sh`的使用这里就不展开叙述了，网上相关资料很多，用**acme.sh alidns**做关键词就能搜到很多，比如[这篇]([文章 - 使用 acme.sh 部署 Let's Encrypt 通过阿里云 DNS 验证方式实现泛域名 HTTPS - FED社区 (f-e-d.club)](https://f-e-d.club/topic/use-acme-sh-deployment-let-s-encrypt-by-ali-cloud-dns-generic-domain-https-authentication.article))，你会发现这篇文章里占了较大篇幅的用户权限配置部分，在用了Terraform以后可以完全被上面的配置实现，有没有感受到一点IaC带来的便利？
+关于`acme.sh`的使用这里就不展开叙述了，网上相关资料很多，用**acme.sh alidns**做关键词就能搜到很多，比如[这篇](https://f-e-d.club/topic/use-acme-sh-deployment-let-s-encrypt-by-ali-cloud-dns-generic-domain-https-authentication.article))，你会发现这篇文章里占了较大篇幅的用户权限配置部分，在用了Terraform以后可以完全被上面的配置实现，有没有感受到一点IaC带来的便利？
 
 这样就拿到了免费的证书，可以开始正式配置了。
 
